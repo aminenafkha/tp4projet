@@ -2,10 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { ListmaterielComponent } from './composants/informatique/listmateriel/listmateriel.component';
+import { MaterielComponent } from './composants/informatique/materiel/materiel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListmaterielComponent,
+    MaterielComponent
+
   ],
   imports: [
     BrowserModule

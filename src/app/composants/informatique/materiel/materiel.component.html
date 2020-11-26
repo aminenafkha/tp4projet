@@ -1,0 +1,17 @@
+<div class="card" class="text-center">
+    <div class="card-header">
+        {{t.libelle}}
+    </div>
+    <div class="card-body">
+        <img [src]="t.photo" >  <br>
+        <span  class="badge badge-pill"  [ngClass]="{'badge-primary':t.hautGamme , 'badge-dark' :!t.hautGamme }       ">
+            Prix :  {{t.prix}} DT 
+
+
+            </span>
+            
+    </div>
+    <div class="card-footer text-muted">
+        <button type="button" class="btn btn-primary">Détails</button>
+    </div>
+</div>   
