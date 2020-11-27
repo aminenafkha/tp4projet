@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { ListmaterielComponent } from './composants/informatique/listmateriel/listmateriel.component';
 import { MaterielComponent } from './composants/informatique/materiel/materiel.component';
 import { DetailmaterielComponent } from './composants/informatique/detailmateriel/detailmateriel.component';
+import { CommentComponent } from './composants/commentaires/comment/comment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListmaterielComponent,
     MaterielComponent,
-    DetailmaterielComponent
+    DetailmaterielComponent,
+    CommentComponent
 
   ],
   imports: [

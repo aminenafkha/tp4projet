@@ -1,4 +1,5 @@
-<h1 class="text-center" >Nos produits en informatique</h1>
+<div *ngIf="display"> 
+    <h1 class="text-center"  >Nos produits en informatique</h1>
 <div class="container">
     <div class="row">
 
@@ -7,8 +8,11 @@
                  <med-materiel   [materiel]="t"> </med-materiel>
             </div>
             </ng-container>
+
     </div>
 </div>
+</div>
+
   
 
 

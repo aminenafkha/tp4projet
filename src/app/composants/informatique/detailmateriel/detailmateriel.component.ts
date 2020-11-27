@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Commentaire } from 'src/app/models/commentaire';
+import { Materiel } from 'src/app/models/materiel';
 
 @Component({
   selector: 'med-detailmateriel',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detailmateriel.component.css']
 })
 export class DetailmaterielComponent implements OnInit {
-  materiel:Materiel ={
+  materiel: Materiel ={
     id: '2',
     libelle: 'PC',
     photo:'assets/Images/Informatique/pcFixe.jpg',
@@ -15,11 +17,17 @@ export class DetailmaterielComponent implements OnInit {
  description: 'PC Portable très pratique',
  hautGamme: false,
  quantite: 5,
- commentaires:[
+ commentaires:  [
 {contenu:' satisfaisant', note:3, auteur:'Sami MRAD', date:new Date(2020,11,4)},
 {contenu:'Bon rapport qualité prix', note:4, auteur:'Samar Salah', date:new Date(
 2020,10,4)}]
 };
+  display: boolean=false;
+
+onAfficher() {
+  this.display=!this.display ;
+}
+
 
   constructor() { }
 

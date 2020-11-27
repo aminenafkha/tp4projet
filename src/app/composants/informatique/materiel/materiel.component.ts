@@ -8,6 +8,15 @@ import { Materiel } from 'src/app/models/materiel';
 })
 export class MaterielComponent implements OnInit {
 @Input("materiel") t :Materiel  ;
+
+display: boolean=true;
+
+onAffiche() {
+  this.display=!this.display ;
+}
+
+
+
   constructor() { }
 
   ngOnInit(): void {

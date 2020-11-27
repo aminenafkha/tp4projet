@@ -67,7 +67,15 @@ export class ListmaterielComponent implements OnInit {
       commentaires:[]
   }
 
+
 ]
+
+display: boolean=true;
+
+onAffiche() {
+  this.display=!this.display ;
+}
+
 
   constructor() { }
 
